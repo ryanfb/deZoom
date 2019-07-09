@@ -3,13 +3,15 @@
 echo "Disabling automatic video when joining a Zoom meeting..."
 defaults write ~/Library/Preferences/us.zoom.config.plist ZDisableVideo 1
 
-echo "Checking for Zoom application directory at /Applications/zoom.us.app..."
-if [ -d /Applications/zoom.us.app ]; then
-  echo "Removing /Applications/zoom.us.app:"
-  rm -rfv /Applications/zoom.us.app
-else
-  echo "/Applications/zoom.us.app directory doesn't exist."
-fi
+for zoom_directory in /Applications/zoom.us.app ~/Applications/zoom.us.app /System/Library/Extensions/ZoomAudioDevice.kext ~/Library/Application\ Support/zoom.us; do
+  echo "Checking for Zoom directory at ${zoom_directory}..."
+  if [ -d "${zoom_directory}" ]; then
+    echo "Removing ${zoom_directory}:"
+    rm -rfv "${zoom_directory}"
+  else
+    echo "${zoom_directory} directory doesn't exist."
+  fi
+done
 
 for zoom_process in ZoomOpener RingCentralOpener; do
   echo "Checking if ${zoom_process} is running..."
