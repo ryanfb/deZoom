@@ -4,6 +4,8 @@ This is a Mac app and shell script for removing the Zoom video conferencing app 
 
 [Click here to download the deZoom App](https://github.com/ryanfb/deZoom/releases/download/v1.0/deZoom.zip)
 
+If this project helped you, feel free to [donate here](https://ryanfb.github.io/etc/tip-jar).
+
 ## Usage
 
 You can either run the app (in order to bypass Mac app signing, you may need to right/two-finger click the app, hold command, then select "Open" and confirm that you want to run the app), or clone this repository and run `./dezoom.sh` if you're comfortable with the command line.
