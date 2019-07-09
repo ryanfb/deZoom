@@ -8,7 +8,7 @@ If this project helped you, feel free to [donate here](https://ryanfb.github.io/
 
 ## Usage
 
-You can either run the app (in order to bypass Mac app signing, you may need to right/two-finger click the app, hold command, then select "Open" and confirm that you want to run the app), or clone this repository and run `./dezoom.sh` if you're comfortable with the command line.
+You can either run the app (in order to bypass Mac app signing, you may need to right/two-finger click the app, hold the "⌘ Command" key on your keyboard, then select "Open" and confirm that you want to run the app), or clone this repository and run `./dezoom.sh` if you're comfortable with the command line.
 
 ![A screenshot of the deZoom app running](screenshot.png?raw=true "A screenshot of the deZoom app running")
 
