@@ -37,3 +37,5 @@ for zoom_directory in zoomus ringcentralopener; do
     echo "~/.${zoom_directory} directory doesn't exist."
   fi
 done
+
+echo "Done."
