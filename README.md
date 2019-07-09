@@ -14,6 +14,8 @@ You can either run the app (in order to bypass Mac app signing, you may need to 
 
 **WARNING:** This will disable Zoom video conferencing by default, delete the Zoom app, kill all Zoom processes, remove Zoom directories, and prevent their recreation. This is the course of action recommended in the vulnerability disclosure. I am not responsible for any data loss or problems that may occur (see below).
 
+If you do notice any problems with running this, feel free to report them to me using GitHub issues, [via Twitter (@ryanfb)](https://twitter.com/ryanfb), or via email at `ryan.baumann@gmail.com`.
+
 ## LICENSE
 
 Copyright 2019 Ryan Baumann
