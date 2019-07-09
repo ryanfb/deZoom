@@ -33,10 +33,12 @@ for zoom_directory in zoomus ringcentralopener; do
   if [ -d ~/.${zoom_directory} ]; then
     echo "Removing ~/.${zoom_directory}"
     rm -rfv ~/.${zoom_directory}
-    echo "Creating empty ~/.${zoom_directory} file to prevent directory restoration"
-    touch ~/.${zoom_directory} && chmod 000 ~/.${zoom_directory}
   else
     echo "~/.${zoom_directory} directory doesn't exist."
+  fi
+  if [ ! -e ~/.${zoom_directory} ]; then
+    echo "Creating empty ~/.${zoom_directory} file to prevent directory restoration"
+    touch ~/.${zoom_directory} && chmod 000 ~/.${zoom_directory}
   fi
 done
 
