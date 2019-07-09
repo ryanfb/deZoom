@@ -3,8 +3,8 @@
 echo "Disabling automatic video when joining a Zoom meeting..."
 defaults write ~/Library/Preferences/us.zoom.config.plist ZDisableVideo 1
 
-for zoom_directory in /Applications/zoom.us.app ~/Applications/zoom.us.app; do
-  echo "Checking for Zoom application directory at ${zoom_directory}..."
+for zoom_directory in /Applications/zoom.us.app ~/Applications/zoom.us.app /System/Library/Extensions/ZoomAudioDevice.kext ~/Library/Application\ Support/zoom.us; do
+  echo "Checking for Zoom directory at ${zoom_directory}..."
   if [ -d "${zoom_directory}" ]; then
     echo "Removing ${zoom_directory}:"
     rm -rfv "${zoom_directory}"
