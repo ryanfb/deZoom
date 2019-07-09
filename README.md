@@ -6,7 +6,9 @@ This is a Mac app and shell script for removing the Zoom video conferencing app 
 
 ## Usage
 
-You can either run the app, or clone this repository and run `./dezoom.sh` if you're comfortable with the command line.
+You can either run the app (in order to bypass Mac app signing, you may need to right/two-finger click the app, hold command, then select "Open" and confirm that you want to run the app), or clone this repository and run `./dezoom.sh` if you're comfortable with the command line.
+
+![A screenshot of the deZoom app running](screenshot.png?raw=true "A screenshot of the deZoom app running")
 
 **WARNING:** This will disable Zoom video conferencing by default, delete the Zoom app, kill all Zoom processes, remove Zoom directories, and prevent their recreation. This is the course of action recommended in the vulnerability disclosure. I am not responsible for any data loss or problems that may occur (see below).
 
