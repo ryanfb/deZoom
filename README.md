@@ -1,10 +1,12 @@
 # deZoom
 
-This is a Mac app and shell script for removing the Zoom video conferencing app from your Mac and disabling the vulnerabilities it leaves behind, [as detailed in this blog post](https://medium.com/@jonathan.leitschuh/zoom-zero-day-4-million-webcams-maybe-an-rce-just-get-them-to-visit-your-website-ac75c83f4ef5). The Mac app is just the shell script bundled into an app using [Platypus](https://sveinbjorn.org/platypus) for ease of use.
+This is a Mac app and shell script for removing the Zoom video conferencing app from your Mac and disabling the vulnerabilities it leaves behind, [as detailed in this blog post](https://medium.com/@jonathan.leitschuh/zoom-zero-day-4-million-webcams-maybe-an-rce-just-get-them-to-visit-your-website-ac75c83f4ef5) as well as [Zoom's own uninstall instructions](https://support.zoom.us/hc/en-us/articles/201362983-How-to-uninstall-Zoom-on-a-Mac-). The Mac app is just the shell script bundled into an app using [Platypus](https://sveinbjorn.org/platypus) for ease of use.
 
 [Click here to download the deZoom App](https://github.com/ryanfb/deZoom/releases/download/v1.1/deZoom.zip)
 
 If this project helped you, feel free to [donate here](https://ryanfb.github.io/etc/tip-jar).
+
+**UPDATE**: [Zoom themselves have announced an intent to fully patch the issue](https://www.wired.com/story/zoom-flaw-web-server-fix/), and [Apple has apparently pushed a silent Mac update to remove the vulnerable service](https://techcrunch.com/2019/07/10/apple-silent-update-zoom-app/).
 
 ## Usage
 
